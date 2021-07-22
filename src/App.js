@@ -1,22 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import './App.css';
+import CustomerList from './componensts/CustomerList';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import ReservationList from './componensts/ReservationList';
+import AddCustomer from './componensts/AddCustomer';
+import Main from './componensts/Main';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Main/>
+        {/* <Row>
+          <Col> */}
+            {/* < CustomerList /> */}
+            {/* < AddCustomer />
+          </Col>
+          <Col>
+            <ReservationList />
+          </Col>
+        </Row> */}
       </header>
     </div>
   );
